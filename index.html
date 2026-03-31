@@ -180,6 +180,15 @@ footer {
   <div class="spinner-border text-light"></div>
 </div>
 
+	<h2>Visitors: <span id="count"></span></h2>
+
+<script>
+let count = localStorage.getItem("visitCount") || 0;
+count++;
+localStorage.setItem("visitCount", count);
+document.getElementById("count").innerText = count;
+</script>
+
 </div>
 
 
